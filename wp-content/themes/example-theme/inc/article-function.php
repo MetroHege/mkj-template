@@ -1,6 +1,5 @@
 <?php
-function generate_article($products)
-{
+function generate_article($products) : void {
     if ($products->have_posts()) :
         while ($products->have_posts()) :
             $products->the_post();

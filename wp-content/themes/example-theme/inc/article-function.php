@@ -7,9 +7,18 @@ function generate_article($products)
             ?>
             <article class="product">
                 <?php
-                the_title('<h1>', '</h1>');
-                the_content();
+                the_post_thumbnail('thumbnail');
+                the_title('<h3>', '</h3>');
+                $excerpt = get_the_excerpt();
                 ?>
+                <p>
+                    <?php
+                    echo substr($excerpt, 0, 100);
+                    ?>...
+                </p>
+                <a href="<?php
+                the_permalink();
+                ?>">Read More</a>
             </article>
         <?php
         endwhile;

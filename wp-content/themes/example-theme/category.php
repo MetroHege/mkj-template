@@ -12,7 +12,6 @@ get_header();
         </div>
         <img src="<?php echo get_random_post_image(get_queried_object_id()); ?>"/>
     </section>
-<p>test</p>
     <main>
         <section class="products">
             <h2><?php single_cat_title(); ?></h2>

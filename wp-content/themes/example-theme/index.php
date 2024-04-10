@@ -19,7 +19,6 @@ get_header();
         <?php the_custom_header_markup(); ?>
         <!--<img src="<?php echo get_stylesheet_directory_uri(); ?>./images/map.svg" alt="hero" />-->
     </section>
-<p>testiä taas</p>
     <main>
         <section class="products">
             <h2>Featured Products</h2>

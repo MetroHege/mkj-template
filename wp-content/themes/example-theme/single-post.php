@@ -16,8 +16,8 @@ get_header();
                     _e('Sorry, no posts matched your criteria.', 'aivan-sama');
                 endif;
                 ?>
+                <?php echo do_shortcode( '[like_button]' ); ?>
             </article>
-
         </section>
     </main>
 <?php

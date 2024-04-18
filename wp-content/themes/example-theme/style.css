@@ -3,6 +3,9 @@ Theme Name: Esimerkki
 Text Domain: esimerkki
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Ewert&display=swap');
+@import url('https://db.onlinewebfonts.com/c/4b68a2a8cab7e5af77ed08aafdf5fe26?family=Colatemta');
+
 * {
     box-sizing: border-box;
 }
@@ -14,12 +17,21 @@ Text Domain: esimerkki
     font-size: 16px;
     line-height: 1.5;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: beige;
+}
+
+.logo {
+    background-image: url('images/wwc.png');
+}
+
+h2 {
+    font-family: 'Colatemta', sans-serif;
 }
 
 body {
     margin: 0;
     padding: 0;
+    background-color: beige;
 }
 
 main {
@@ -55,14 +67,24 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 1rem;
-    margin: 2rem 0;
+    margin-top: 2rem;
     text-align: center;
     width: 100%;
-    background-image: url('images/wave2.svg');
+    height: 10rem;
+    background-image: url('images/sunset3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Ewert', cursive;
 }
 
+#copyright {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.footer-nav {
+    color: white;
+}
 
 
 .container {
@@ -76,9 +98,10 @@ footer {
 .page-header {
     display: flex;
     flex-wrap: wrap;
+    height: 5rem;
     margin-bottom: 1rem;
     justify-content: space-between;
-    background-image: url('images/wave.svg');
+    background-image: url('images/sunset3.jpg');
     background-repeat: no-repeat;
 }
 
@@ -120,11 +143,17 @@ footer {
 
 .hero-text {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 20%;
     transform: translate(-50%, -50%);
     color: #f4f4f4;
     text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Ewert', cursive;
 }
 
 .hero img {
@@ -146,9 +175,10 @@ footer {
 .product {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 1rem;
-    background-color: #fff;
     margin-bottom: 2rem;
     border-radius: 6px;
+    background-color: #9F8C76;
+
 }
 
 .product img {
@@ -180,9 +210,23 @@ footer {
 .single {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 1rem;
-    background-color: #fff;
+    background-color: #9F8C76;
     margin: 0.5rem;
     border-radius: 6px;
+}
+
+.single h1 {
+    font-size: 2rem;
+    font-family: 'Colatemta', sans-serif;
+}
+
+#single-post {
+    background-color: beige;
+}
+
+dialog {
+    max-height: 70vh;
+    max-width: 70vw;
 }
 
 .single img {
@@ -215,10 +259,50 @@ footer {
         margin: 0 auto;
     }
 
+    /* Sidebar styles */
     aside {
-        width: 25%;
-        margin-top: 4.7rem;
-        margin-bottom: 2rem;
+        margin: 20px 0;
+        padding: 20px;
+        background-color: #9F8C76;
+        border-radius: 10px;
+    }
+
+    aside .search-content,
+    aside .contact-content {
+        margin-bottom: 20px;
+    }
+
+    aside .contact-content h2 {
+        font-size: 1.5em;
+        color: #333;
+    }
+
+    aside .contact-content p {
+        font-size: 1em;
+        color: #666;
+    }
+
+    aside .contact-content form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    aside .contact-content form input,
+    aside .contact-content form textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+    aside .contact-content form input[type="submit"] {
+        cursor: pointer;
+        color: #fff;
+        background-color: #333;
+        border: none;
+        padding: 10px;
+        font-size: 1em;
     }
 
     .page-header {

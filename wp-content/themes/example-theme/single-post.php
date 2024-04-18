@@ -18,7 +18,6 @@ get_header();
                 ?>
                 <?php echo do_shortcode( '[like_button]' ); ?>
                 <?php echo do_shortcode('[rating_form]'); ?>
-                <?php echo do_shortcode('[simple_contact_form]'); ?>
             </article>
         </section>
     </main>

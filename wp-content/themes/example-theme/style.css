@@ -86,6 +86,10 @@ footer {
     color: white;
 }
 
+.footer-nav li {
+    list-style: none;
+}
+
 
 .container {
     max-width: 1200px;
@@ -339,6 +343,21 @@ dialog {
         width: auto;
     }
 
+
+    .about-info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    .company-info {
+        width: 45%;
+    }
+
+    #mapid {
+        width: 50%;
+        height: 300px;
+    }
     .hero {
         height: auto;
     }

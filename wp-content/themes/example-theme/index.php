@@ -18,7 +18,7 @@ get_header();
         } elseif (is_page('about')) {
             $page = get_page_by_path('about');
             if ($page) {
-                echo '<h1>Wild West Clothing</h1>'; // Change here
+                echo '<h1>Wild West Clothing</h1>';
                 echo apply_filters('the_content', $page->post_content);
             } else {
                 echo 'Sorry, no page was found.';
@@ -35,6 +35,7 @@ if (is_front_page()) {
     echo '<p>Tämä ei kuitenkaan ole loppuvahti, sillä western-kulttuuri kukoistaa nyt enemmän kuin koskaan. Jokainen myyty tuote edustaa intohimoamme ja omistautumistamme tarjota asiakkaillemme parasta mahdollista laatua ja tyyliä.</p>';
     echo '<p>Tule mukaan tähän ainutlaatuiseen matkaan ja löydä oma villin lännen henkesi Wild West Clothingin valikoimasta!</p>';
     echo '</div>';
+
 }
 ?>
 <main>
@@ -52,12 +53,23 @@ if (is_front_page()) {
         </section>
         <?php
     } elseif (is_page('about')) {
-        // This is the 'about' page
         echo '<div class="content">';
         echo '<h2>Meidän tarinamme</h2>';
         echo '<p>Wild West Clothing on tarina villistä seikkailusta ja ajattomasta tyylistä. Jo 20 vuoden ajan olemme tarjonneet laadukkaita cowboy-vaatteita ja -tarvikkeita, jotka huokuvat lännenhenkeä ja modernia eleganssia.</p>';
         echo '<p>Alkuperämme juontavat juurensa Vantaan Länsimäen pölyisiltä teiltä, missä intohimomme lännenkulttuuriin syttyi. Matkamme on vienyt meidät läpi aavikon ja kaupunkien, kunnes löysimme kodin Helsingin Kampin sydämestä.</p>';
         echo '<p>Kivijalkakauppamme Kampissa on paikka, jossa villi länsi kohtaa urbaanin elämänrytmin. Tule tutustumaan tarinaamme ja löydä oma sielusi kaupungin tomuista ja avaruuden taivaasta!</p>';
+        echo '</div>';
+        echo '<div class="about-info">';
+        echo '<div class="company-info">';
+        echo '<h2>Yrityksen tiedot</h2>';
+        echo '<p>Wild West Clothing Oy</p>';
+        echo '<p>Fredrikinkatu 19</p>';
+        echo '<p>00120 Helsinki</p>';
+        echo '<p>Y-tunnus: 1234567-8</p>';
+        echo '<p>Puhelin: +358 40 1234 567</p>';
+        echo '<p>Sähköposti: info@wwc.fi</p>';
+        echo '</div>';
+        echo '<div id="mapid"></div>';
         echo '</div>';
     }
     ?>

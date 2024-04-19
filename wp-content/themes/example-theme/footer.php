@@ -17,6 +17,7 @@
     <button id="close">Close</button>
     <article id="modal-content" class="single"></article>
 </dialog>
+<script src="<?php echo get_template_directory_uri(); ?>./js/map.js"></script>
 <?php wp_footer(); ?>
 </body>
 </html>
